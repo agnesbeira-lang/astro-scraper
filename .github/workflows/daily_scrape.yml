@@ -37,6 +37,6 @@ jobs:
           BQ_PROJECT: marketplace-tracker-513006
           BQ_DATASET: daily_astro
           BQ_TABLE: master_astro
-          ASTRO_SWEEP: never             # UJI CEPAT dulu. Ganti ke "always" setelah uji berhasil
+          ASTRO_SWEEP: always             # UJI CEPAT dulu. Ganti ke "always" setelah uji berhasil
           ASTRO_TIME_BUDGET_MIN: "180"
         run: python run_pipeline.py
