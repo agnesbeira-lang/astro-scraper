@@ -1,0 +1,10 @@
+data/
+*.csv
+*.csv.gz
+credentials.json
+client_secret*.json
+key.json
+*-key.json
+token.json
+__pycache__/
+.env
