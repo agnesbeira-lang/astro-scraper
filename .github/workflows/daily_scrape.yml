@@ -38,5 +38,5 @@ jobs:
           BQ_DATASET: daily_astro
           BQ_TABLE: master_astro
           ASTRO_SWEEP: always             # UJI CEPAT dulu. Ganti ke "always" setelah uji berhasil
-          ASTRO_TIME_BUDGET_MIN: "180"
+          ASTRO_TIME_BUDGET_MIN: "7200"
         run: python run_pipeline.py
