@@ -2,7 +2,7 @@ name: daily-astro-scrape
 
 on:
   schedule:
-    - cron: "0 19 * * *"        # 19:00 UTC = 02:00 WIB
+    - cron: "17 18 * * *"        # 18:17 UTC = 01:17 WIB
   workflow_dispatch:             # tombol "Run workflow" untuk uji manual
 
 permissions:
@@ -15,7 +15,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 340
     steps:
       - uses: actions/checkout@v4
 
